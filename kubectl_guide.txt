@@ -1,0 +1,20 @@
+
+
+Kubernetes kubectl guide!
+
+-- Pods
+// start a container
+> kubectl run <name> --image=<image_name:tag>
+
+// Show all the pods
+> kubectl get pods
+
+// Shows all pods with more detail
+> kubectl get pods -o wide
+
+// get pod information
+> kubectl describe pod <name>
+
+
+
+

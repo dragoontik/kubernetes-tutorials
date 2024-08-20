@@ -1,0 +1,15 @@
+# root level required fieldss
+apiVersion: v1
+# kind - type of object you are creating
+# e.g. Pod, Service, ReplicaSet, Deployment
+kind: Pod
+metadata: 
+  name: myapp-pod
+  labels:
+    app: myapp
+    type: front-end
+spec:
+  # containers is a list because a pod can contain more than one.
+  containers:
+    - name: ngnix-container
+      image: ngnix:bookworm
